@@ -1,0 +1,35 @@
+/* Poker-specific styles */
+
+.table-area {
+  background-color: #222; /* darker table for poker */
+  padding: 1rem;
+  border: 3px solid crimson;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.table-area pre {
+  font-family: monospace;
+  font-size: 1rem;
+  background-color: #111;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid crimson;
+}
+
+.table-area button {
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-area button:hover {
+  background-color: #dc143ccc;
+}
