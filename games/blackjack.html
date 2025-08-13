@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Texas Hold'em</title>
+  <title>Blackjack</title>
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/poker.css" />
+  <link rel="stylesheet" href="../css/blackjack.css" />
 </head>
 <body>
 
   <header>
-    <h1>♦ Texas Hold'em ♠</h1>
+    <h1>♠ Blackjack ♣</h1>
   </header>
 
   <nav>
@@ -20,20 +20,14 @@
   </nav>
 
   <main>
-    <div class="table-area">
-<pre>
-╔════════════════════════════╗
-║ Community Cards:           ║
-║ [ ? ] [ ? ] [ ? ] [ ? ] [ ?]║
-║                            ║
-║ Player Hand:               ║
-║ [ ♥ 9 ] [ ♣ A ]            ║
-╚════════════════════════════╝
-</pre>
-      <p>Pot: $0</p>
-      <button>Check</button>
-      <button>Bet</button>
-      <button>Fold</button>
+    <!-- Game Area -->
+    <div class="table-area"></div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="hit">Hit</button>
+      <button id="stand">Stand</button>
+      <button id="new-game">New Game</button>
     </div>
   </main>
 
@@ -41,5 +35,7 @@
     <p>© 2025 Card Games Hub</p>
   </footer>
 
+  <!-- Game Script -->
+  <script src="../js/blackjack.js"></script>
 </body>
 </html>
