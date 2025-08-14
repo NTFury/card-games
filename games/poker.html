@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Texas Hold'em Poker</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/poker.css" />
+  <link rel="stylesheet" href="css/poker.css">
 </head>
 <body>
-
   <header>
     <h1>♥ Texas Hold'em ♠</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blackjack.html">Blackjack</a>
+      <a href="poker.html">Texas Hold'em</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="blackjack.html">Blackjack</a>
-    <a href="poker.html">Texas Hold'em</a>
-  </nav>
+  <main class="poker-container">
+    <section id="game-table">
+      <h2>Game Table</h2>
+      <pre id="poker-output">
+Your Hand: [♠ 3] [♠ A]
+Community: [♠ 3] [♦ 7] [♦ A] [♠ A] [♣ 8]
+Opponent: [Hidden, Hidden]
 
-  <main>
-    <div class="poker-layout">
-      
-      <!-- Game Table -->
-      <div class="table-area">
-        <h2>Game Table</h2>
-        <pre id="poker-display">
-Click "New Game" to begin.
-        </pre>
-        <div class="controls">
-          <button id="deal">New Game</button>
-          <button id="next-round" disabled>Next</button>
-        </div>
-      </div>
+Stage: Turn
+      </pre>
+      <button id="new-game-btn">New Game</button>
+      <button id="next-stage-btn">Next</button>
+    </section>
 
-      <!-- Poker Hand Rankings Guide -->
-      <aside class="hand-guide">
-        <h2>Hand Rankings</h2>
-<pre>
+    <aside id="hand-rankings">
+      <h2>Hand Rankings</h2>
+      <pre>
 1. Royal Flush
 2. Straight Flush
 3. Four of a Kind
@@ -48,16 +43,14 @@ Click "New Game" to begin.
 8. Two Pair
 9. One Pair
 10. High Card
-</pre>
-      </aside>
-
-    </div>
+      </pre>
+    </aside>
   </main>
 
   <footer>
-    <p>© 2025 Card Games Hub</p>
+    © 2025 Card Games Hub
   </footer>
 
-  <script src="../js/poker.js"></script>
+  <script src="js/poker.js"></script>
 </body>
 </html>
