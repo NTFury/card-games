@@ -1,13 +1,24 @@
 /* Poker-specific styles */
 
+.poker-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
 .table-area {
-  background-color: #222; /* darker table for poker */
+  background-color: #222;
   padding: 1rem;
   border: 3px solid crimson;
   border-radius: 10px;
-  display: inline-block;
-  text-align: left;
-  margin-top: 2rem;
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+.table-area h2 {
+  color: crimson;
 }
 
 .table-area pre {
@@ -17,6 +28,7 @@
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid crimson;
+  min-height: 150px;
 }
 
 .table-area button {
@@ -32,4 +44,25 @@
 
 .table-area button:hover {
   background-color: #dc143ccc;
+}
+
+.hand-guide {
+  background-color: #333;
+  border: 3px solid gold;
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 0 0 250px;
+  min-width: 200px;
+}
+
+.hand-guide h2 {
+  color: gold;
+}
+
+.hand-guide pre {
+  font-family: monospace;
+  background-color: #222;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid gold;
 }
