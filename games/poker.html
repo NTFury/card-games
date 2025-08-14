@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Texas Hold'em</title>
+  <title>Texas Hold'em Poker</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/poker.css" />
 </head>
 <body>
 
   <header>
-    <h1>♦ Texas Hold'em ♠</h1>
+    <h1>♥ Texas Hold'em ♠</h1>
   </header>
 
   <nav>
@@ -20,20 +20,37 @@
   </nav>
 
   <main>
-    <div class="table-area">
+    <div class="poker-layout">
+      
+      <!-- Game Table -->
+      <div class="table-area">
+        <h2>Game Table</h2>
+        <pre id="poker-display">
+Click "New Game" to begin.
+        </pre>
+        <div class="controls">
+          <button id="deal">New Game</button>
+          <button id="next-round" disabled>Next</button>
+        </div>
+      </div>
+
+      <!-- Poker Hand Rankings Guide -->
+      <aside class="hand-guide">
+        <h2>Hand Rankings</h2>
 <pre>
-╔════════════════════════════╗
-║ Community Cards:           ║
-║ [ ? ] [ ? ] [ ? ] [ ? ] [ ?]║
-║                            ║
-║ Player Hand:               ║
-║ [ ♥ 9 ] [ ♣ A ]            ║
-╚════════════════════════════╝
+1. Royal Flush
+2. Straight Flush
+3. Four of a Kind
+4. Full House
+5. Flush
+6. Straight
+7. Three of a Kind
+8. Two Pair
+9. One Pair
+10. High Card
 </pre>
-      <p>Pot: $0</p>
-      <button>Check</button>
-      <button>Bet</button>
-      <button>Fold</button>
+      </aside>
+
     </div>
   </main>
 
@@ -41,5 +58,6 @@
     <p>© 2025 Card Games Hub</p>
   </footer>
 
+  <script src="../js/poker.js"></script>
 </body>
 </html>
