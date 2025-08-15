@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blackjack</title>
-  <link rel="stylesheet" href="css/blackjack.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/blackjack.css" />
 </head>
 <body>
+
   <header>
     <h1>♣ Blackjack ♠</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blackjack.html">Blackjack</a>
-      <a href="poker.html">Texas Hold'em</a>
-    </nav>
   </header>
 
-  <main class="blackjack-container">
-    <section id="blackjack-table">
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="blackjack.html">Blackjack</a>
+    <a href="poker.html">Texas Hold'em</a>
+  </nav>
+
+  <main>
+    <section class="table-area">
       <h2>Game Table</h2>
-      <pre id="blackjack-output">
-Dealer: [Hidden, ♠ 5]
-Player: [♦ 10, ♣ 7]
-Score: 17
-      </pre>
-      <button id="new-game-btn">New Game</button>
-      <button id="hit-btn">Hit</button>
-      <button id="stand-btn">Stand</button>
+      <div id="bj-cards"><pre>Dealing…</pre></div>
+
+      <div class="controls">
+        <button id="hit">Hit</button>
+        <button id="stand">Stand</button>
+        <button id="new-game">New Game</button>
+      </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Card Games Hub
+    <p>© 2025 Card Games Hub</p>
   </footer>
 
-  <script src="js/blackjack.js"></script>
+  <script src="../js/blackjack.js"></script>
 </body>
 </html>
