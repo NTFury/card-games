@@ -1,79 +1,47 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #004400;
-  color: white;
-}
+/* Blackjack-specific styles — centered wide table with larger cards/buttons */
 
-header {
-  background-color: #111;
-  padding: 10px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav a {
-  color: lightblue;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #111;
-  font-size: 0.9rem;
-}
-
-/* Updated Layout */
-.blackjack-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-#blackjack-table {
-  flex: 1;
-  max-width: 800px;
+.table-area {
+  background-color: #222;
+  border: 3px solid gold;
+  border-radius: 10px;
   padding: 1rem;
-  background: #222;
-  border: 3px solid crimson;
-  border-radius: 8px;
+  margin: 1.5rem auto 0;
+  max-width: 960px;
 }
 
-#blackjack-table h2 {
-  color: crimson;
-  text-align: center;
+.table-area h2 {
+  color: gold;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 
-#blackjack-table pre {
-  background: #111;
-  padding: 1rem;
-  border-radius: 5px;
+.table-area pre {
   font-family: monospace;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 1.25rem;     /* bigger card text */
+  line-height: 1.6rem;
+  background-color: #111;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  min-height: 150px;
+  overflow-x: auto;
 }
 
-/* Buttons */
-#blackjack-table button {
-  background: crimson;
-  color: white;
+.controls {
+  margin-top: 0.75rem;
+}
+
+.controls button {
+  background-color: crimson;
+  color: #fff;
   border: none;
-  padding: 0.8rem 1.5rem;
-  margin: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  margin-right: 0.5rem;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: bold;
   cursor: pointer;
 }
 
-#blackjack-table button:hover {
-  background: darkred;
-}
+.controls button:hover { background-color: #b9102f; }
+.controls button:disabled { opacity: 0.5; cursor: not-allowed; }
