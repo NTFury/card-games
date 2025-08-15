@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blackjack</title>
+  <!-- Keep the same working style reference -->
   <link rel="stylesheet" href="../css/blackjack.css" />
 </head>
 <body>
@@ -16,24 +17,26 @@
   </header>
 
   <main>
-    <!-- Game Table Area -->
-    <div class="table-area">
-      <!-- blackjack.js will inject card ASCII art here -->
-    </div>
+    <!-- Table area where JS will render cards -->
+    <section class="game-table">
+      <div class="table-area">
+        <!-- blackjack.js will inject ASCII cards here -->
+      </div>
+    </section>
 
-    <!-- Game Controls -->
-    <div class="controls">
-      <button id="hit">Hit</button>
-      <button id="stand">Stand</button>
-      <button id="new-game">New Game</button>
-    </div>
+    <!-- Controls styled with same classes from old version -->
+    <section class="controls">
+      <button id="hit" class="game-btn">Hit</button>
+      <button id="stand" class="game-btn">Stand</button>
+      <button id="new-game" class="game-btn">New Game</button>
+    </section>
   </main>
 
   <footer>
-    <p>Blackjack Game</p>
+    <p>&copy; 2025 Card Games</p>
   </footer>
 
-  <!-- Important: correct relative path to JS -->
+  <!-- Keep same working script path -->
   <script src="../js/blackjack.js"></script>
 </body>
 </html>
