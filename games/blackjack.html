@@ -2,40 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blackjack</title>
-  <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/blackjack.css" />
 </head>
 <body>
-
   <header>
-    <h1>♣ Blackjack ♠</h1>
+    <h1>Blackjack</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="poker.html">Poker</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="blackjack.html">Blackjack</a>
-    <a href="poker.html">Texas Hold'em</a>
-  </nav>
-
   <main>
-    <section class="table-area">
-      <h2>Game Table</h2>
-      <div id="bj-cards"><pre>Dealing…</pre></div>
+    <!-- Game Table Area -->
+    <div class="table-area">
+      <!-- blackjack.js will inject card ASCII art here -->
+    </div>
 
-      <div class="controls">
-        <button id="hit">Hit</button>
-        <button id="stand">Stand</button>
-        <button id="new-game">New Game</button>
-      </div>
-    </section>
+    <!-- Game Controls -->
+    <div class="controls">
+      <button id="hit">Hit</button>
+      <button id="stand">Stand</button>
+      <button id="new-game">New Game</button>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Card Games Hub</p>
+    <p>Blackjack Game</p>
   </footer>
 
+  <!-- Important: correct relative path to JS -->
   <script src="../js/blackjack.js"></script>
 </body>
 </html>
